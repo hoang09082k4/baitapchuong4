@@ -1,132 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.4 on win32)" generated="2025-04-27T21:11:26.501336" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.4 on win32)" generated="2025-04-28T21:53:11.567297" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\orangehrm-login-tests\tests">
 <suite id="s1-s1" name="Login Test" source="C:\orangehrm-login-tests\tests\login_test.robot">
 <test id="s1-s1-t1" name="Login With Valid Credentials" line="5">
 <kw name="Open Browser To Login Page" owner="login_resource">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:26.772402" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-04-28T21:53:12.154561" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-04-28T21:53:16.106712" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-27T21:11:26.772402" elapsed="4.239112"/>
+<status status="PASS" start="2025-04-28T21:53:12.154561" elapsed="9.775344"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.011514" elapsed="0.027036"/>
+<status status="PASS" start="2025-04-28T21:53:21.929905" elapsed="0.075525"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.041553" elapsed="0.498037"/>
+<status status="PASS" start="2025-04-28T21:53:22.005430" elapsed="0.969719"/>
 </kw>
-<status status="PASS" start="2025-04-27T21:11:26.771396" elapsed="4.769185"/>
+<status status="PASS" start="2025-04-28T21:53:12.152811" elapsed="10.822338"/>
 </kw>
 <kw name="Input Credentials" owner="login_resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:31.541580" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<msg time="2025-04-28T21:53:22.975149" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
 <arg>name=username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.541580" elapsed="0.073003"/>
+<status status="PASS" start="2025-04-28T21:53:22.975149" elapsed="0.147606"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:31.615590" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<msg time="2025-04-28T21:53:23.130722" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.614583" elapsed="0.083630"/>
+<status status="PASS" start="2025-04-28T21:53:23.122755" elapsed="0.327787"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:31.699215" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2025-04-28T21:53:23.450542" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.698213" elapsed="0.085077"/>
+<status status="PASS" start="2025-04-28T21:53:23.450542" elapsed="0.374155"/>
 </kw>
 <arg>${VALID_USERNAME}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-04-27T21:11:31.540581" elapsed="0.242709"/>
+<status status="PASS" start="2025-04-28T21:53:22.975149" elapsed="0.850877"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h6[text()="Dashboard"]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-27T21:11:31.784290" elapsed="1.612528"/>
+<status status="PASS" start="2025-04-28T21:53:23.829084" elapsed="1.956664"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:33.611820" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-28T21:53:26.201418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-04-27T21:11:33.397818" elapsed="0.214002"/>
+<status status="PASS" start="2025-04-28T21:53:25.785748" elapsed="0.417687"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-27T21:11:43.613231" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-04-28T21:53:36.203788" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-27T21:11:33.612824" elapsed="10.000407"/>
+<status status="PASS" start="2025-04-28T21:53:26.203435" elapsed="10.000353"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-04-27T21:11:43.614290" elapsed="2.086491"/>
+<status status="PASS" start="2025-04-28T21:53:36.203788" elapsed="2.371289"/>
 </kw>
 <doc>Login thành công với tài khoản hợp lệ</doc>
-<status status="PASS" start="2025-04-27T21:11:26.770531" elapsed="18.931247"/>
+<status status="PASS" start="2025-04-28T21:53:12.151406" elapsed="26.423671"/>
 </test>
 <test id="s1-s1-t2" name="Login With Invalid Credentials" line="14">
 <kw name="Open Browser To Login Page" owner="login_resource">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-27T21:11:45.703782" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-04-28T21:53:38.575077" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-27T21:11:45.703782" elapsed="5.168484"/>
+<status status="PASS" start="2025-04-28T21:53:38.575077" elapsed="4.927739"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-27T21:11:50.873267" elapsed="0.045000"/>
+<status status="PASS" start="2025-04-28T21:53:43.502816" elapsed="0.055676"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=username</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-27T21:11:50.919268" elapsed="0.742851"/>
+<status status="PASS" start="2025-04-28T21:53:43.558492" elapsed="0.790729"/>
 </kw>
-<status status="PASS" start="2025-04-27T21:11:45.703782" elapsed="5.958337"/>
+<status status="PASS" start="2025-04-28T21:53:38.575077" elapsed="5.774144"/>
 </kw>
 <kw name="Input Credentials" owner="login_resource">
-<msg time="2025-04-27T21:11:51.663124" level="FAIL">Variable '${INVALID_USERNAME}' not found. Did you mean:
+<msg time="2025-04-28T21:53:44.349221" level="FAIL">Variable '${INVALID_USERNAME}' not found. Did you mean:
     ${VALID_USERNAME}</msg>
 <arg>${INVALID_USERNAME}</arg>
 <arg>${INVALID_PASSWORD}</arg>
-<status status="FAIL" start="2025-04-27T21:11:51.663124" elapsed="0.000000">Variable '${INVALID_USERNAME}' not found. Did you mean:
+<status status="FAIL" start="2025-04-28T21:53:44.349221" elapsed="0.000000">Variable '${INVALID_USERNAME}' not found. Did you mean:
     ${VALID_USERNAME}</status>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//p[contains(text(),"Invalid credentials")]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-04-27T21:11:51.663124" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-04-28T21:53:44.349221" elapsed="0.000000"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2025-04-27T21:11:51.664121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-04-28T21:53:44.349221" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-04-27T21:11:51.664121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-04-28T21:53:44.349221" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-27T21:11:51.664121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-04-28T21:53:44.349221" elapsed="0.000000"/>
 </kw>
 <doc>Login thất bại với tài khoản không hợp lệ</doc>
-<status status="FAIL" start="2025-04-27T21:11:45.702784" elapsed="5.961337">Variable '${INVALID_USERNAME}' not found. Did you mean:
+<status status="FAIL" start="2025-04-28T21:53:38.575077" elapsed="5.774144">Variable '${INVALID_USERNAME}' not found. Did you mean:
     ${VALID_USERNAME}</status>
 </test>
-<status status="FAIL" start="2025-04-27T21:11:26.524334" elapsed="25.140782"/>
+<status status="FAIL" start="2025-04-28T21:53:11.608275" elapsed="32.740946"/>
 </suite>
-<status status="FAIL" start="2025-04-27T21:11:26.502334" elapsed="25.163783"/>
+<status status="FAIL" start="2025-04-28T21:53:11.571550" elapsed="32.785992"/>
 </suite>
 <statistics>
 <total>
@@ -140,7 +141,8 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-04-27T21:11:26.535334" level="ERROR">Error in file 'C:\orangehrm-login-tests\resources\login_resource.robot' on line 8: Setting variable '${INVALID_USERNAME} AdminWrong' failed: Invalid variable name '${INVALID_USERNAME} AdminWrong'.</msg>
-<msg time="2025-04-27T21:11:26.535879" level="ERROR">Error in file 'C:\orangehrm-login-tests\resources\login_resource.robot' on line 9: Setting variable '${INVALID_PASSWORD} wrong123' failed: Invalid variable name '${INVALID_PASSWORD} wrong123'.</msg>
+<msg time="2025-04-28T21:53:11.630878" level="ERROR">Error in file 'C:\orangehrm-login-tests\resources\login_resource.robot' on line 8: Setting variable '${INVALID_USERNAME} AdminWrong' failed: Invalid variable name '${INVALID_USERNAME} AdminWrong'.</msg>
+<msg time="2025-04-28T21:53:11.630878" level="ERROR">Error in file 'C:\orangehrm-login-tests\resources\login_resource.robot' on line 9: Setting variable '${INVALID_PASSWORD} wrong123' failed: Invalid variable name '${INVALID_PASSWORD} wrong123'.</msg>
+<msg time="2025-04-28T21:53:16.106712" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 </errors>
 </robot>
